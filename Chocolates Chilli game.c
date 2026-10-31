@@ -5,11 +5,14 @@ int main()
     printf("      WELCOME TO THE GAME \n");
     printf("************************************\n");
     int choc,n1,n2;
+    start:
     printf("Enter no of chocolates : ");
     scanf("%d",&choc);
 
     if(choc<=0)
+    {
     printf("Enter valid chocolates.\n");
+    goto start;
 
     else
     {
